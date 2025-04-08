@@ -3,30 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Esercitazione landing page</title>
   </head>
   <body>
     <nav class="wrapper">
-      <div class="navbar">
-        <div class="nav-left">
-          <ol>
-            <li>
-              <a href=""><i></i></a>
-            </li>
-            <li><a href="">Pricing</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Wall of love</a></li>
-            <li>
-              <a href="">Resources</a><span><i></i></span>
-            </li>
-          </ol>
+      <div class="container flex nav__container">
+        <div class="nav_logo">
+          <img src=".//assets/logo.svg" alt="logo navbar">
         </div>
-        <div class="nav-right">
-          <a href=""></a>
-          <a href="">
-            <span></span>
-          </a>
+        <div class="nav__menu">
+          <div class="nav__menu-item">
+            <a class="light" href="">Pricing</a>
+          </div>
+          <div class="nav__menu-item">
+            <a class="light" href="">About</a>
+          </div>
+          <div class="nav__menu-item">
+            <a class="light" href="">Blog</a>
+          </div>
+          <div class="nav__menu-item">
+            <a class="light" href="">Wall of love</a>
+          </div>
+          <div class="nav__menu-item dropdown"  >
+            <a class="light" href="">Resources<svg class="cxbrt c18is chp24 c0jld cemoo c8gzo cazwt cnq1m" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.28 4.305L5.989 8.598 1.695 4.305A1 1 0 00.28 5.72l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z"></path>
+          </svg></a>
+            <div class="dropdown__body">
+              <div class="dropdown__body-item">
+                <a href="">404</a></div>
+              <div class="dropdown__body-item">
+                <a href="">Support</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__actions">
+            <div class="nav__actions-item">
+              <a class="light" href="">Sign in</a>
+            </div>
+            <div class="nav__actions-item">
+              <a class="light h-white a-arrow" href="">Request Demo<span class="arrow-r">-></span></a>
+            </div>
+      
         </div>
       </div>
     </nav>

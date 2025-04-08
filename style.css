@@ -1,0 +1,157 @@
+@import url(index.css);
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: var(--text-font-family);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+html,
+body {
+  font-size: var(--global-font-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--title-font-family);
+  color: var(--tertiary-color);
+}
+
+h1.light,
+h2.light,
+h3.light,
+h4.light,
+h5.light,
+h6.light {
+  color: var(--title-light-color);
+}
+
+a.light,
+p.light {
+  color: var(--text-light-color);
+}
+
+a {
+  cursor: pointer;
+  transition: all ease-in-out 0.25s;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+a.h-white:hover {
+  color: white;
+}
+
+a.a-arrow{
+position: relative;
+}
+
+a.a-arrow .arrow-r{
+color: var(--primary-color);
+position: absolute;
+transition: all  ease-in-out;
+
+
+}
+
+ a.a-arrow:hover .arrow-r {
+top: 0;
+left: 0;
+    margin-left: 3px;
+
+ }
+
+.flex {
+  display: flex;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper .container {
+  width: 100%;
+  max-width: var(--container-max-w);
+  padding: 1.5rem;
+}
+/*------------dropdown---------*/
+.dropdown {
+  position: relative;
+}
+.dropdown a svg {
+height: 12px;
+width: 12px;
+fill: var(--text-light-color);
+
+}
+
+.dropdown .dropdown__body {
+  visibility: hidden;
+  opacity: 0;
+  margin-top: -10px;
+  position: absolute;
+  background-color: white;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  top: calc(100%+0.5rem);
+  width: 150px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-in-out 0.25s;
+}
+
+.dropdown:hover .dropdown__body{
+visibility: visible;
+opacity: 1;
+margin-top: 0;
+
+}
+
+.dropdown .dropdown__body .dropdown__body-item a {
+  padding: 0.5rem;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+/*--------------------nav----------*/
+nav {
+  background-color: var(--tertiary-color);
+  height: 80px;
+  justify-content: center;
+}
+nav .nav__container {
+  gap: 36px;
+}
+
+nav .nav_logo img {
+  width: 32px;
+  height: 32px;
+}
+
+nav .nav__menu {
+  display: flex;
+  flex-grow: 1;
+  gap: 36px;
+  align-items: center;
+}
+
+nav .nav__actions {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
