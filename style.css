@@ -60,12 +60,13 @@ a.a-arrow .arrow-r{
 color: var(--primary-color);
 transition: all  ease-in-out;
 position: relative;
+left:5px;
 
 
 }
 
  a.a-arrow:hover .arrow-r {
-left: 3px;
+left: 8px;
  }
 
 .flex {
