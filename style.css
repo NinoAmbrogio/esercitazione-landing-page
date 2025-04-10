@@ -153,3 +153,90 @@ nav .nav__actions {
   gap: 36px;
   align-items: center;
 }
+/*------------END-NAV--------------*/
+header {
+  background-color: var(--tertiary-color);
+}
+
+
+.header_container{
+width: 100%;
+display: flex;
+align-items:center ;
+text-align: center;
+}
+
+.header-buttons{
+display: flex;
+gap: 10px;
+justify-content: flex-start;
+width: 100%;
+
+
+}
+
+.button{
+
+  background-color:var(--primary-color) ;
+ padding: 12px 24px;
+border-radius: 5%;
+}
+
+.button:last-child{
+background-color:oklch(0.372 0.044 257.287);
+;
+
+
+}
+
+
+.button a{
+
+  color: white
+
+}
+
+  
+
+
+
+.header-left{
+text-align: center;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+.header-left p {
+color:var(--text-light-color);
+font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 0 32px;
+  text-align: start;
+}
+
+
+.header-left h1{
+font-size: 64px;
+color: white;
+font-family: var(--title-font-family);
+font-size: 4rem;
+font-weight: 700;
+line-height: 74px;
+margin: 0 0 16px;
+text-align: start;
+
+}
+
+
+.header-right img{
+width: 540px;
+height: 425px;
+
+}
+
+
