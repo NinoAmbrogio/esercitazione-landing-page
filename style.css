@@ -52,22 +52,20 @@ a.h-white:hover {
   color: white;
 }
 
-a.a-arrow{
-position: relative;
+a.a-arrow {
+  position: relative;
 }
 
-a.a-arrow .arrow-r{
-color: var(--primary-color);
-transition: all  ease-in-out;
-position: relative;
-left:5px;
-
-
+a.a-arrow .arrow-r {
+  color: var(--primary-color);
+  transition: all ease-in-out;
+  position: relative;
+  left: 5px;
 }
 
- a.a-arrow:hover .arrow-r {
-left: 8px;
- }
+a.a-arrow:hover .arrow-r {
+  left: 8px;
+}
 
 .flex {
   display: flex;
@@ -88,12 +86,12 @@ left: 8px;
 /*------------dropdown---------*/
 .dropdown {
   position: relative;
+
 }
 .dropdown a svg {
-height: 12px;
-width: 12px;
-fill: var(--text-light-color);
-
+  height: 12px;
+  width: 12px;
+  fill: var(--text-light-color);
 }
 
 .dropdown .dropdown__body {
@@ -110,13 +108,14 @@ fill: var(--text-light-color);
   display: flex;
   flex-direction: column;
   transition: all ease-in-out 0.25s;
+  z-index: 1;
 }
 
-.dropdown:hover .dropdown__body{
-visibility: visible;
-opacity: 1;
-margin-top: 0;
-
+.dropdown:hover .dropdown__body {
+  visibility: visible;
+  opacity: 1;
+  margin-top: 0;
+  z-index: 1;
 }
 
 .dropdown .dropdown__body .dropdown__body-item a {
@@ -124,6 +123,7 @@ margin-top: 0;
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
+  
 }
 
 /*--------------------nav----------*/
@@ -131,6 +131,7 @@ nav {
   background-color: var(--tertiary-color);
   height: 80px;
   justify-content: center;
+  
 }
 nav .nav__container {
   gap: 36px;
@@ -146,6 +147,7 @@ nav .nav__menu {
   flex-grow: 1;
   gap: 36px;
   align-items: center;
+  
 }
 
 nav .nav__actions {
@@ -156,88 +158,99 @@ nav .nav__actions {
 /*------------END-NAV--------------*/
 header {
   background-color: var(--tertiary-color);
+  clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
+  padding-top: 10px;
+  padding-bottom: 100px;
+  z-index:-1 ;
+  
+}
+
+.header_container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.button {
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+  border-radius: 3%;
+}
+
+.button:last-child {
+  background-color: oklch(0.372 0.044 257.287);
+}
+.button:last-child:hover {
+  background-color: #1d293d;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #1447e6;
+  transition: all ease-in-out 0.25s;
+  cursor: pointer;
+}
+
+.button a {
+  color: white;
 }
 
 
-.header_container{
-width: 100%;
-display: flex;
-align-items:center ;
-text-align: center;
+.a-arrow-h:hover{
+  transition: all ease-in-out;
+  position: relative;
+  left: 5px;
 }
 
-.header-buttons{
-display: flex;
-gap: 10px;
-justify-content: flex-start;
-width: 100%;
-
-
+.a-arrow .a-arrow-h{
+  left: 8px;
+  position: relative;
+ 
 }
-
-.button{
-
-  background-color:var(--primary-color) ;
- padding: 12px 24px;
-border-radius: 5%;
-}
-
-.button:last-child{
-background-color:oklch(0.372 0.044 257.287);
-;
-
-
-}
-
-
-.button a{
-
-  color: white
-
-}
-
   
 
 
 
-.header-left{
-text-align: center;
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-margin-right:70px;
 
-
+.header-left {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 70px;
 }
 
 .header-left p {
-color:var(--text-light-color);
-font-size: 1.25rem;
+  color: var(--text-light-color);
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 30px;
   margin: 0 0 32px;
   text-align: start;
 }
 
-
-.header-left h1{
-font-size: 64px;
-color: white;
-font-family: var(--title-font-family);
-font-size: 4rem;
-font-weight: 700;
-line-height: 74px;
-margin: 0 0 16px;
-text-align: start;
-
+.header-left h1 {
+  font-size: 64px;
+  color: white;
+  font-family: var(--title-font-family);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 74px;
+  margin: 0 0 16px;
+  text-align: start;
 }
 
-
-.header-right img{
-width: 540px;
-height: 425px;
-
+.header-right img {
+  width: 540px;
+  height: 425px;
 }
-
-
