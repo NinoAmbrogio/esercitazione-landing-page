@@ -183,6 +183,9 @@ header {
   background-color: var(--primary-color);
   padding: 12px 24px;
   border-radius: 3%;
+  overflow: hidden;
+  position: relative;
+
 }
 
 .button:last-child {
@@ -200,23 +203,19 @@ header {
   cursor: pointer;
 }
 
+.button:hover a span{
+  transform: translateX(5px);
+}
+
 .button a {
   color: white;
 }
 
-
-.a-arrow-h:hover{
-  transition: all ease-in-out;
-  position: relative;
-  left: 5px;
-}
-
-.a-arrow .a-arrow-h{
-  left: 8px;
-  position: relative;
- 
-}
+.button a span{
+  display: inline-block;
+  transition: transform 0.3s ease;
   
+}
 
 
 
