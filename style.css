@@ -249,7 +249,23 @@ header {
   text-align: start;
 }
 
-.header-right img {
+
+.header-right-item img {
   width: 540px;
   height: 425px;
+  
+}
+
+
+
+
+header .header-right-item-border{
+  position:absolute;
+    width: 540px;
+    height: 425px;
+    border: 2px solid;
+    border-color:#314158;
+    top:8.125rem;
+    left:61.25rem;
+    z-index: -2; 
 }
