@@ -239,20 +239,26 @@ header {
   margin: 0 0 16px;
   text-align: start;
 }
+.header-right{
+position: relative;
+
+}
+
 
 .header-right-item img {
   width: 540px;
   height: 425px;
 }
+
 header .header-right-item-border {
   position: absolute;
   width: 540px;
   height: 425px;
   border: 2px solid;
   border-color: #314158;
-  top: 8.125rem;
-  left: 61.25rem;
-  z-index: -2;
+ top: 20px;
+ left: 20px;
+ z-index: -1;
 }
 
 /*-----------------END-HEADER-------------*/
