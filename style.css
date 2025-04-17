@@ -86,7 +86,6 @@ a.a-arrow:hover .arrow-r {
 /*------------dropdown---------*/
 .dropdown {
   position: relative;
-
 }
 .dropdown a svg {
   height: 12px;
@@ -123,7 +122,6 @@ a.a-arrow:hover .arrow-r {
   display: block;
   font-size: 0.875rem;
   font-weight: 400;
-  
 }
 
 /*--------------------nav----------*/
@@ -131,7 +129,6 @@ nav {
   background-color: var(--tertiary-color);
   height: 80px;
   justify-content: center;
-  
 }
 nav .nav__container {
   gap: 36px;
@@ -147,7 +144,6 @@ nav .nav__menu {
   flex-grow: 1;
   gap: 36px;
   align-items: center;
-  
 }
 
 nav .nav__actions {
@@ -156,13 +152,13 @@ nav .nav__actions {
   align-items: center;
 }
 /*------------END-NAV--------------*/
+/*-------------------HEADER---------------*/
 header {
   background-color: var(--tertiary-color);
   clip-path: polygon(0 0, 100% 0, 100% 82%, 0% 100%);
   padding-top: 10px;
   padding-bottom: 100px;
-  z-index:-1 ;
-  
+  z-index: -1;
 }
 
 .header_container {
@@ -185,7 +181,6 @@ header {
   border-radius: 3%;
   overflow: hidden;
   position: relative;
-
 }
 
 .button:last-child {
@@ -203,7 +198,7 @@ header {
   cursor: pointer;
 }
 
-.button:hover a span{
+.button:hover a span {
   transform: translateX(5px);
 }
 
@@ -211,14 +206,10 @@ header {
   color: white;
 }
 
-.button a span{
+.button a span {
   display: inline-block;
   transition: transform 0.3s ease;
-  
 }
-
-
-
 
 .header-left {
   text-align: center;
@@ -249,46 +240,67 @@ header {
   text-align: start;
 }
 
-
 .header-right-item img {
   width: 540px;
   height: 425px;
-  
+}
+header .header-right-item-border {
+  position: absolute;
+  width: 540px;
+  height: 425px;
+  border: 2px solid;
+  border-color: #314158;
+  top: 8.125rem;
+  left: 61.25rem;
+  z-index: -2;
 }
 
-
-
-
-header .header-right-item-border{
-  position:absolute;
-    width: 540px;
-    height: 425px;
-    border: 2px solid;
-    border-color:#314158;
-    top:8.125rem;
-    left:61.25rem;
-    z-index: -2; 
-}
+/*-----------------END-HEADER-------------*/
 /*------------------------Section1---------------*/
-.section1{
-display:grid;
-grid-template-columns: repeat(3, 255px);
-gap: 4rem;
-
+.section1 {
+  display: grid;
+  grid-template-columns: repeat(3, 255px);
+  gap: 4rem;
+  margin-top: 8rem;
 }
 
-.section1_box h1{
-font-weight:700 ;
-color: #1D293D;
-size: 24px;
-line-height: 34px;
+.section1_box i svg {
+  width: 70px;
+  fill: var(--primary-color);
 }
 
-.section1_box p{
+.section1_box h1 {
+  font-weight: 700;
+  color: #1d293d;
+  size: 24px;
+  line-height: 34px;
+}
 
-font-weight: 400;
-color: var(--text-light-color);
-line-height: 27px;
-size: 18px;
+.section1_box p {
+  font-weight: 400;
+  color: var(--text-light-color);
+  line-height: 27px;
+  size: 18px;
+}
+
+/*------------------section2-------------*/
+.built4u {
+  margin-top: 6rem;
+  max-width: 48rem;
+}
+
+.built4u_text h2 {
+  font-size: 48px;
+  text-align: center;
+}
+
+.built4u_text p {
+  margin-top: 20px;
+  font-size: 1.25rem;
+  color: var(--text-light-color);
+}
+
+.built4u_middle{
+font-size:1.125rem ;
 
 }
